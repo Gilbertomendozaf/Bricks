@@ -1,0 +1,45 @@
+header {
+	width: 100%;
+	background-color: rgb(230, 230, 230);
+	position: sticky;
+	z-index: 1;
+	top: 0;
+}
+.img-logo {
+	width: 55px;
+	padding-right: 2px;
+	margin-right: 2px;
+}
+.container-fluid {
+	span {
+		padding-top: 5px;
+		margin-left: 0.5px;
+		font-size: x-large;
+		font-family: $typo-titulos;
+		font-weight: 700;
+	}
+}
+.navbar-nav {
+	a {
+		font-size: larger;
+		font-family: $typo-titulos;
+	}
+}
+.nav-item {
+	border-radius: 40px;
+	transition: 0.5s;
+	&:hover {
+		color: $color1;
+		margin: 0px 5px;
+		background-color:$bg-hover;
+		border-radius: 40px;
+		padding: 0px 15px;
+		transition: all 0.5s;
+	}
+}
+
+
+
+
+
+
