@@ -137,8 +137,8 @@ header{
 .cartas-container{
     display: flex;
     justify-content: space-evenly;
-    flex-direction:row;
-    margin: 0px 50px 15px 50px;
+    flex-flow:row wrap;
+    margin: 0 50px 15px 50px;
 }
 
 .cartas-container h3{
@@ -156,7 +156,7 @@ header{
     padding: 10px;
     margin: 10px;
     border-radius: 50px;
-    filter: drop-shadow(2px 2px 5px rgb(100, 100, 100,0.5));
+    filter: drop-shadow(2px 2px 5px rgba(100, 100, 100,0.5));
 } 
 
 
