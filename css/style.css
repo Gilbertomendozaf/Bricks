@@ -57,6 +57,8 @@ header {
     border-radius: 40px;
     padding: 0px 15px;
     transition: all 0.5s; }
+  .nav-item .nav-link:hover {
+    color: white; }
 
 .container-hero {
   position: relative; }
@@ -168,10 +170,9 @@ header {
 .container-nosotros {
   display: flex;
   flex-direction: column;
-  width: 100%;
   justify-content: center;
   align-content: center;
-  padding: 20px;
+  padding: 10px;
   margin: 10px; }
   .container-nosotros h2 {
     font-size: x-large;
@@ -186,58 +187,53 @@ header {
     padding: 5px;
     margin: 5px;
     font-size: large; }
+  .container-nosotros .h3-equipo {
+    text-align: center; }
 
 .container-equipo {
   display: grid;
   width: 100%;
-  height: 50%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "item1 item2 item3 item4";
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   row-gap: 20px;
   align-content: center;
-  padding: 15px;
-  margin: 15px; }
+  padding: 15px; }
   .container-equipo h4 {
     font-size: large;
     font-weight: bold;
     padding: 5px;
     margin: 5px; }
+  .container-equipo h5 {
+    font-size: medium;
+    font-weight: normal;
+    font-family: "Oswald", sans-serif; }
 
 .item {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 10px; }
   .item img {
     width: 200px;
     height: 300px;
     border-radius: 50px;
-    object-fit: cover; }
+    object-fit: cover;
+    filter: drop-shadow(2px 2px 5px rgba(100, 100, 100, 0.5)); }
 
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center; }
-
-.carousel {
-  width: 50%; }
-
-.mira-nuestros-trabajos h2 {
-  font-size: 2rem;
-  font-weight: 550;
-  padding: 0.5rem;
-  margin: 0.5rem; }
-
-.carousel-inner {
-  filter: drop-shadow(2px 2px 10px rgba(162, 162, 162, 0.5)); }
-
-.carousel-item img {
-  width: 100%;
-  height: 50%;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-  object-fit: cover;
-  border-radius: 50px; }
+.container .slide {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .container .slide h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px; }
+  .container .slide .carousel-inner {
+    filter: drop-shadow(2px 2px 10px rgba(162, 162, 162, 0.5)); }
+  .container .slide img {
+    object-fit: contain;
+    height: 80vh;
+    width: 100%;
+    margin-bottom: 15px; }
+  .container .slide .carousel-control-prev-icon, .container .slide .carousel-control-next-icon {
+    filter: invert(100%); }
 
 footer {
   width: 100%;
