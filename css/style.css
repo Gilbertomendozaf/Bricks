@@ -128,42 +128,6 @@ header {
     border-radius: 50px;
     filter: drop-shadow(2px 2px 5px rgba(100, 100, 100, 0.5)); }
 
-@media (max-width: 768px) {
-  .container-hero {
-    position: relative; }
-    .container-hero img {
-      width: 100%;
-      height: 65vh; }
-    .container-hero h1 {
-      position: absolute;
-      top: 10%;
-      left: 5%;
-      font-family: "Oswald", sans-serif;
-      font-size: 50px;
-      font-weight: bold; }
-    .container-hero p {
-      position: absolute;
-      top: 25%;
-      left: 3%;
-      font-size: 15px;
-      font-weight: 400;
-      font-family: "Oswald", sans-serif;
-      font-style: italic; }
-    .container-hero button {
-      display: none; }
-  .carta-conocenos {
-    font-size: medium; }
-    .carta-conocenos h3 {
-      text-align: center;
-      margin-top: 5px; }
-    .carta-conocenos img {
-      width: 300px;
-      height: 300px;
-      padding: 5px;
-      margin: 5px;
-      border-radius: 50px;
-      filter: drop-shadow(2px 2px 5px rgba(100, 100, 100, 0.5)); } }
-
 .nosotros-main {
   background-color: white; }
 
@@ -213,6 +177,53 @@ header {
   .item img {
     width: 200px;
     height: 300px;
+    border-radius: 50px;
+    object-fit: cover;
+    filter: drop-shadow(2px 2px 5px rgba(100, 100, 100, 0.5)); }
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 15px; }
+  .servicios h2 {
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 5px;
+    margin: 5px; }
+  .servicios p {
+    text-align: justify;
+    font-size: large;
+    padding: 5px;
+    margin: 5px; }
+  .servicios a {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold; }
+  .servicios h3 {
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    text-align: center; }
+
+.container-servicios {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  align-content: center;
+  row-gap: 20px;
+  padding: 15px; }
+  .container-servicios h4 {
+    font-size: large;
+    font-weight: normal;
+    font-family: "Oswald", sans-serif; }
+
+.carta-servicios {
+  text-align: center;
+  margin-bottom: 10px; }
+  .carta-servicios img {
+    width: 600px;
+    height: 600px;
     border-radius: 50px;
     object-fit: cover;
     filter: drop-shadow(2px 2px 5px rgba(100, 100, 100, 0.5)); }
@@ -302,6 +313,46 @@ footer {
   font-size: 15px; }
 
 @media (max-width: 768px) {
+  .container-hero {
+    position: relative; }
+    .container-hero img {
+      width: 100%;
+      height: 65vh; }
+    .container-hero h1 {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      font-family: "Oswald", sans-serif;
+      font-size: 50px;
+      font-weight: bold; }
+    .container-hero p {
+      position: absolute;
+      top: 25%;
+      left: 3%;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Oswald", sans-serif;
+      font-style: italic; }
+    .container-hero button {
+      display: none; }
+  .carta-conocenos {
+    font-size: medium; }
+    .carta-conocenos h3 {
+      text-align: center;
+      margin-top: 5px; }
+    .carta-conocenos img {
+      width: 300px;
+      height: 300px;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 50px;
+      filter: drop-shadow(2px 2px 5px rgba(100, 100, 100, 0.5)); }
+  .container-servicios {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); }
+  .carta-servicios img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50px; }
   footer .container-footer {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
@@ -309,3 +360,28 @@ footer {
     padding: 10px 0; }
     footer .container-footer .box1 h2 {
       font-size: 32px; } }
+
+@media (max-width: 620px) and (min-width: 500px) {
+  .container-servicios {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
+  .carta-servicios img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50px; } }
+
+@media (max-width: 520px) and (min-width: 420px) {
+  .container-servicios {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+  .carta-servicios img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50px; } }
+
+@media (max-width: 420px) {
+  .container-servicios {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0; }
+  .carta-servicios img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px; } }
