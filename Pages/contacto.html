@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bricks</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Bricks | Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
     <script src="https://kit.fontawesome.com/60607153d5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,8 +21,10 @@
     <header>
         <nav class="navbar navbar-expand-lg p-2">
             <div class="container-fluid">
-                <a class="navbar-brand ms-2" href="../index.html"> <img class="img-logo" src="../assets/img/logo-cubo-3d.png" alt="Logo"/> <span>Bricks</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand ms-2" href="../index.html"> <img class="img-logo"
+                        src="../assets/img/logo-cubo-3d.png" alt="Logo" /> <span>Bricks</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,22 +50,16 @@
         </nav>
     </header>
 
-    <main>
-        <section class="container-sucursal">
-            <h2>Bricks central</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1108.1199030670186!2d-56.15075637814432!3d-34.88132732431003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80f0f8a449e1%3A0x33d841909cf57372!2sAv.%208%20de%20Octubre%203174%2C%2011600%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1675205250956!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <p>Dirección: Sucursal 1, Calle 5 </p>
-            <p>Numero de contacto: 2004 4404</p>
-        </section>
-
-        <section class="formulario">
-            <fieldset>
-                <legend>Formulario de contacto</legend>
-                <div>
+    <main class="container-contacto">
+        <section class="container-form">
+            
+            <form action="" method="post">
+                <div class="formulario">
+                    <h2>Formulario de contacto</h2>
                     <p>Ingresa tus datos y envianos eso que tanto quieres crear</p>
                 </div>
-                <form action="" method="post">
-                    <fieldset>
-                        <legend> Datos personales</legend>
+                <fieldset class="toma-datos">
+                    <legend> Datos personales</legend>
                     <label for="nombre">
                         <span>Nombre:</span>
                         <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
@@ -76,16 +76,34 @@
                         <span> Archivo </span>
                         <input type="file" id="archivo" placeholder="Archivo" required>
                     </label>
-                    
-                    <input type="reset">
-                    <input type="submit">
-                    </fieldset>
-                    <fieldset>
-                        <legend>Proyecto</legend>
-                        <input type="text" placeholder="Mensaje">
-                    </fieldset>
-                </form>
-        </fieldset>
+                    <label for="carta-servicios">
+                        <span>Escoge un servicio:</span>
+                        <select id="carta-servicios" required>
+                            <option value="Empresariales">Empresariales</option>
+                            <option value="Piezas">Piezas</option>
+                            <option value="Maquetado">Maquetado</option>
+                            <option value="Cartelería">Cartelería</option>
+                        </select>
+                    </label>
+                    <label class="textarea" for="mensaje">
+                        <span>Consulta</span>
+                        <textarea id="mensaje" placeholder="Ingresa tu consulta y/o explicación de proyecto"></textarea>
+                    <input class="input-button" type="submit">        
+                    <input class="input-button" type="reset">
+
+                </fieldset>
+            </form>
+        </section>
+        <section class="container-sucursal">
+            <div>
+                <h2>Bricks central</h2>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1108.1199030670186!2d-56.15075637814432!3d-34.88132732431003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80f0f8a449e1%3A0x33d841909cf57372!2sAv.%208%20de%20Octubre%203174%2C%2011600%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1675205250956!5m2!1ses-419!2suy"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Dirección: Sucursal 1, Calle 5 </p>
+                <p>Numero de contacto: 2004 4404</p>
+            </div>
         </section>
     </main>
     <footer>
@@ -113,6 +131,9 @@
             <small>&copy; 2023 <b>Bricks</b> - Todos los Derechos Reservados</small>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
