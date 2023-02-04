@@ -244,7 +244,7 @@
 		}
 	}
 	.container-servicios{
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: minmax(500px, 1fr);
     }
     .carta-servicios{
         img{
@@ -270,7 +270,7 @@
 
 @media (max-width: 620px) and (min-width:500px){
     .container-servicios{
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: minmax(400px, 1fr);
     }
     .carta-servicios{
         img{
@@ -336,7 +336,7 @@
         }
     }
     .container-servicios{
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: minmax(350px, 1fr);
     }
     .carta-servicios{
         img{
@@ -370,7 +370,7 @@
         }
     }
     .container-servicios{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: minmax(300px, 1fr);
         padding: 0;
     }
     .carta-servicios{
@@ -378,9 +378,9 @@
             width: 300px;
             height: 300px;
             border-radius: 50px;
-			padding: 0;
+			padding: 10px 0;
 			border: 0;
-			margin: 0;
+			margin: 10px 0;
         }
     }
 	.container-contacto{
@@ -400,19 +400,3 @@
         }
     }
 }
-// @media (max-width: 419px) and (min-width:320px){
-//     .container-hero {
-//         p {
-//             position: absolute;
-//             top: 10%;
-//             left: 3%;
-//             font-size: 25px;
-//             font-weight: 400;
-//             font-family:$typo-titulos;
-//             font-style: italic;
-//         }
-//         button {
-//             display: none;
-//         }
-//     }
-// }

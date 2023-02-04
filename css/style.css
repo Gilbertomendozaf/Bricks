@@ -592,7 +592,7 @@ footer {
       border-radius: 50px;
       filter: drop-shadow(2px 2px 5px rgba(100, 100, 100, 0.5)); }
   .container-servicios {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); }
+    grid-template-columns: minmax(500px, 1fr); }
   .carta-servicios img {
     width: 500px;
     height: 500px;
@@ -607,7 +607,7 @@ footer {
 
 @media (max-width: 620px) and (min-width: 500px) {
   .container-servicios {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
+    grid-template-columns: minmax(400px, 1fr); }
   .carta-servicios img {
     width: 400px;
     height: 400px;
@@ -655,7 +655,7 @@ footer {
       padding: 12px 12px 12px 12px;
       transition: 0.7s; }
   .container-servicios {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+    grid-template-columns: minmax(350px, 1fr); }
   .carta-servicios img {
     width: 350px;
     height: 350px;
@@ -679,15 +679,15 @@ footer {
       padding: 10px 10px 10px 10px;
       transition: 0.7s; }
   .container-servicios {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: minmax(300px, 1fr);
     padding: 0; }
   .carta-servicios img {
     width: 300px;
     height: 300px;
     border-radius: 50px;
-    padding: 0;
+    padding: 10px 0;
     border: 0;
-    margin: 0; }
+    margin: 10px 0; }
   .container-contacto .container-form {
     width: 100%; }
     .container-contacto .container-form form {
